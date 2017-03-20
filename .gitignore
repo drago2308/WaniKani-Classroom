@@ -49,10 +49,11 @@ Temporary Items
 
 # Ignore Everything but themes
 /*
+/*/
 !.gitignore
 
-!application/
-application/*
-!application/blocks/
+!/application/
+/application/*
+!/application/blocks/
 
-!packages/
+!/packages/
