@@ -1,0 +1,405 @@
+/* Style The Grid */
+.grid-container {
+  width: 100%;
+  height: auto;
+  visibility: hidden;
+}
+
+.grid-item {
+  float: left;
+  margin: 10px;
+  height: 150px;
+  width: 500px;
+  background-color: #353644;
+  box-shadow: 0px 0px 3px 3px #eee;
+  overflow: hidden;
+
+  transition: 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946) all;
+}
+
+.grid-item.open {
+  height: 490px !important;
+}
+
+.grid-item:hover {
+  box-shadow: 0px 0px 6px 3px #bbb;
+  cursor: pointer;
+}
+
+.progress {
+  height: 1.5rem;
+  position: relative;
+  background: #555;
+  margin-bottom:0.15rem;
+}
+
+.progress-bar {
+  height: 100%;
+  display:block;
+  background-color: cyan;
+  position: relative;
+  overflow: hidden;
+}
+
+.basic-info-radical-progress {
+  background-color: #8ed8f8;
+}
+
+.progress-bar-radical {
+  background-color: #2bade2;
+}
+
+.basic-info-kanji-progress {
+
+  background-color: #ef5b9e;
+}
+
+.progress-bar-kanji {
+  background-color: #eb0889;
+}
+
+
+.basic-info-container{
+  position: relative;
+  max-height: 150px;
+  background-color: white;
+  box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.1);
+  overflow: hidden;
+  z-index: 2;
+
+  transition: 0.4s ease-out box-shadow;
+}
+
+.basic-info-img-container {
+  position: relative;
+  float:left;
+  height: 150px;
+  width: 28%;
+  background-color: #ace1fa;
+}
+
+.basic-info-profile-img {
+  background-size: cover;
+  background-position: center;
+  height:100%;
+  width: 100%;
+}
+
+.basic-info-profile-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.basic-info-progress-container {
+  float: left;
+  width: 72%;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.basic-info-username {
+  font-size: 1.6rem;
+  float: left;
+}
+
+.basic-info-level{
+  font-size: 1.6rem;
+  float: right;
+}
+
+/* Responsify Stuff (grid system is take care with jQuery)*/
+
+@media(max-width: 792px){
+  .basic-info-username {
+    font-size: 1.3rem;
+    float: left;
+  }
+
+  .basic-info-level{
+    font-size: 1.3rem;
+    float: right;
+  }
+}
+
+@media(max-width: 512px){
+  .basic-info-username {
+    font-size: 1.2rem;
+    float: left;
+  }
+
+  .basic-info-level{
+    font-size: 1.2rem;
+    float: right;
+  }
+}
+
+.extra-info-container{
+  position: relative;
+  height: auto;
+  background-color: #353644;
+  overflow: hidden;
+  color: white !important;
+
+  transition: 0.4s ease all;
+}
+
+.extra-info-agme-container {
+  height: 150px;
+}
+
+.extra-info-agme-container-top {
+  height:75px;
+  z-index: 2;
+  box-shadow: 0 0 3px 3px rgba(0,0,0,0.2);
+}
+
+.extra-info-agme-apprentice {
+  height: 75px;
+  overflow: hidden;
+  float: left;
+  width: 25%;
+  background-color: #ec008c;
+
+  transition: 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946) all;
+}
+
+.extra-info-agme-apprentice:hover {
+  background-color:#ef5b9e;
+  height: calc(75px * 4);
+  margin-top: -75px;
+}
+
+.extra-info-agme-apprentice-radicals {
+  height: 75px;
+  width: 100%;
+  background-color: #777;
+  z-index: 1;
+}
+
+.extra-info-agme-apprentice-kanji {
+  height: 75px;
+  width: 100%;
+  background-color: #555;
+  z-index: 1;
+}
+
+.extra-info-agme-apprentice-vocabulary {
+  height: 75px;
+  width: 100%;
+  background-color: #333;
+  clear:both;
+  z-index: 1;
+}
+
+.extra-info-agme-guru {
+  height: 75px;
+  overflow:hidden;
+  float: left;
+  width: 25%;
+  background-color: #6d2d82;
+
+  transition: 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946) all;
+}
+
+.extra-info-agme-guru:hover {
+  background-color:#673AB7;
+  height: calc(75px * 4);
+  margin-top: -75px;
+}
+
+.extra-info-agme-guru-radicals {
+  height: 75px;
+  width: 100%;
+  background-color: #777;
+  z-index: 1;
+}
+
+.extra-info-agme-guru-kanji {
+  height: 75px;
+  width: 100%;
+  background-color: #555;
+  z-index: 1;
+}
+
+.extra-info-agme-guru-vocabulary {
+  height: 75px;
+  width: 100%;
+  background-color: #333;
+  clear:both;
+  z-index: 1;
+}
+
+.extra-info-agme-master {
+  height: 75px;
+  overflow: hidden;
+  float: left;
+  width: 25%;
+  background-color: #0071bc;
+
+  transition: 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946) all;
+}
+
+.extra-info-agme-master:hover {
+  background-color: #7986CB;
+  height: calc(75px * 4);
+  margin-top: -75px;
+}
+
+.extra-info-agme-master-radicals {
+  height: 75px;
+  width: 100%;
+  background-color: #777;
+  z-index: 1;
+}
+
+.extra-info-agme-master-kanji {
+  height: 75px;
+  width: 100%;
+  background-color: #555;
+  z-index: 1;
+}
+
+.extra-info-agme-master-vocabulary {
+  height: 75px;
+  width: 100%;
+  background-color: #333;
+  clear:both;
+  z-index: 1;
+}
+
+.extra-info-agme-enlighten {
+  height: 75px;
+  float: left;
+  width: 25%;
+  overflow: hidden;
+  background-color: #00aeef;
+
+  transition: 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946) all;
+}
+
+.extra-info-agme-enlighten:hover {
+  background-color: #4FC3F7;
+  height: calc(75px * 4);
+  margin-top: -75px;
+}
+
+.extra-info-agme-enlighten-radicals {
+  height: 75px;
+  width: 100%;
+  background-color: #777;
+  z-index: 1;
+}
+
+.extra-info-agme-enlighten-kanji {
+  height: 75px;
+  width: 100%;
+  background-color: #555;
+  z-index: 1;
+}
+
+.extra-info-agme-enlighten-vocabulary {
+  height: 75px;
+  width: 100%;
+  background-color: #333;
+  clear:both;
+  z-index: 1;
+}
+
+.extra-info-agme-burned {
+  height: 75px;
+  overflow: hidden;
+  width: 100%;
+  background-color: #999;
+  clear:both;
+  box-shadow: 0 0 3px 3px rgba(0,0,0,0.2);
+  z-index: 1;
+
+  transition: 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946) all;
+}
+
+.extra-info-agme-burned:hover {
+  background-color: #bbb;
+  height: calc(75px * 4);
+}
+
+.extra-info-agme-burned-radicals {
+  height: 75px;
+  width: 100%;
+  background-color: #777;
+  clear:both;
+  z-index: 1;
+}
+
+.extra-info-agme-burned-kanji {
+  height: 75px;
+  width: 100%;
+  background-color: #555;
+  clear:both;
+  z-index: 1;
+}
+
+.extra-info-agme-burned-vocabulary {
+  height: 75px;
+  width: 100%;
+  background-color: #333;
+  clear:both;
+  z-index: 1;
+}
+
+.extra-info-agme-container h5 {
+  padding: 1rem 0rem;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  margin-bottom: 0;
+}
+
+.extra-info-title {
+  font-size: 1.25rem;
+  padding: 0.25rem;
+
+}
+
+.extra-info-left-container {
+  width: 65%;
+  float: left;
+  padding: 0.25rem;
+}
+
+
+.extra-info-left-kana {
+  font-size: 1.5rem;
+}
+.extra-info-left-character {
+  font-size: 2rem;
+}
+.extra-info-left-complete {
+  font-size: 1.5rem;
+}
+
+.extra-info-left-meaning {
+  padding-top: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.extra-info-right-container {
+  padding: 0.25rem;
+  width: 35%;
+  float: right;
+  text-align: right;
+}
+
+.extra-info-right-on-yomi {
+  font-size: 1.25rem;
+}
+
+.extra-info-right-kun-yomi {
+  font-size: 1.25rem;
+}
+
+.extra-info-right-percentage {
+  font-size: 1.5rem;
+}
+
+
+/* Responsify Stuff (grid system is take care with jQuery)*/

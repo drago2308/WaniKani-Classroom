@@ -1,0 +1,22 @@
+.nav {
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 1.5rem 3rem;
+}
+
+.nav li a {
+  color: grey;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: 0.8s ease all;
+}
+
+.nav li a:hover {
+  color: black;
+  text-decoration: none;
+
+}

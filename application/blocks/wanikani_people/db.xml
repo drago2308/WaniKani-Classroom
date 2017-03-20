@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btWanikaniPeople">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="wanikani_type" type="X2">
+			<default value="" />
+		</field>
+		<field name="get_url" type="I1" size="1">
+			<default value="0" />
+		</field>
+		<field name="search" type="I1" size="1">
+			<default value="0" />
+		</field>
+	</table>
+</schema>

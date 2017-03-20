@@ -1,0 +1,177 @@
+/* -- Ripple-effect ----------------------------------- */
+.ripple-effect {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translatez(0);
+}
+.ink {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: scale(0);
+}
+.ink {
+  background: #fff;
+  opacity: 1;
+}
+.ink.animate {
+  -webkit-animation: ripple-effect 375ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  -o-animation: ripple-effect 375ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  animation: ripple-effect 375ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+@keyframes ripple-effect {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+  }
+}
+@-webkit-keyframes ripple-effect {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+  }
+}
+@-moz-keyframes ripple-effect {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+  }
+}
+@-ms-keyframes ripple-effect {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+  }
+}
+@-o-keyframes ripple-effect {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+  }
+}
+/*-- Display animation -------------------------------- */
+.display-animation > * {
+  /*
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  */
+  opacity: 0;
+}
+.display-animation > .animated {
+  -webkit-animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
+  -o-animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
+  animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
+}
+.no-js .display-animation > * {
+  /*
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  */
+  opacity: 0;
+}
+/* Only for bloody internet explorer 9 */
+@media screen and (min-width:0) {
+  .no-js .display-animation > .animated {
+    /*
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    */
+    opacity: 1\9\0;
+
+  }
+}
+
+
+@keyframes display {
+  from {
+    /*
+    -webkit-transform: scale(0);
+    */
+    opacity: 0;
+  }
+  to {
+    /*
+    -webkit-transform: scale(1);
+    */
+    opacity: 1;
+  }
+}
+@-o-keyframes display {
+  from {
+    /*
+    -webkit-transform: scale(0);
+    */
+    opacity: 0;
+  }
+  to {
+    /*
+    -webkit-transform: scale(1);
+    */
+    opacity: 1;
+  }
+}
+@-ms-keyframes display {
+  from {
+    /*
+    -webkit-transform: scale(0);
+    */
+    opacity: 0;
+  }
+  to {
+    /*
+    -webkit-transform: scale(1);
+    */
+    opacity: 1;
+  }
+}
+@-moz-keyframes display {
+  from {
+    /*
+    -webkit-transform: scale(0);
+    */
+    opacity: 0;
+  }
+  to {
+    /*
+    -webkit-transform: scale(1);
+    */
+    opacity: 1;
+  }
+}
+@-webkit-keyframes display {
+  from {
+    /*
+    -webkit-transform: scale(0);
+    */
+    opacity: 0;
+  }
+  to {
+    /*
+    -webkit-transform: scale(1);
+    */
+    opacity: 1;
+  }
+}
