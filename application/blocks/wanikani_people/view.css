@@ -147,6 +147,7 @@
 }
 
 .extra-info-agme-container-top {
+  position:relative;
   height:75px;
   z-index: 2;
   box-shadow: 0 0 3px 3px rgba(0,0,0,0.2);
@@ -163,7 +164,7 @@
 }
 
 .extra-info-agme-apprentice:hover {
-  background-color:#ef5b9e;
+  background-color:#ff0978;
   height: calc(75px * 4);
   margin-top: -75px;
 }
@@ -171,23 +172,20 @@
 .extra-info-agme-apprentice-radicals {
   height: 75px;
   width: 100%;
-  background-color: #777;
-  z-index: 1;
+  background-color: #ff3491;
 }
 
 .extra-info-agme-apprentice-kanji {
   height: 75px;
   width: 100%;
-  background-color: #555;
-  z-index: 1;
+  background-color: #ff519f;
 }
 
 .extra-info-agme-apprentice-vocabulary {
   height: 75px;
   width: 100%;
-  background-color: #333;
+  background-color: #ff6db1;
   clear:both;
-  z-index: 1;
 }
 
 .extra-info-agme-guru {
@@ -201,7 +199,7 @@
 }
 
 .extra-info-agme-guru:hover {
-  background-color:#673AB7;
+  background-color: #68008c;
   height: calc(75px * 4);
   margin-top: -75px;
 }
@@ -209,23 +207,20 @@
 .extra-info-agme-guru-radicals {
   height: 75px;
   width: 100%;
-  background-color: #777;
-  z-index: 1;
+  background-color: #9e00cf;
 }
 
 .extra-info-agme-guru-kanji {
   height: 75px;
   width: 100%;
-  background-color: #555;
-  z-index: 1;
+  background-color: #c713ff;
 }
 
 .extra-info-agme-guru-vocabulary {
   height: 75px;
   width: 100%;
-  background-color: #333;
+  background-color: #d149ff;
   clear:both;
-  z-index: 1;
 }
 
 .extra-info-agme-master {
@@ -239,7 +234,7 @@
 }
 
 .extra-info-agme-master:hover {
-  background-color: #7986CB;
+  background-color: #005196;
   height: calc(75px * 4);
   margin-top: -75px;
 }
@@ -247,23 +242,20 @@
 .extra-info-agme-master-radicals {
   height: 75px;
   width: 100%;
-  background-color: #777;
-  z-index: 1;
+  background-color: #0080d7;
 }
 
 .extra-info-agme-master-kanji {
   height: 75px;
   width: 100%;
-  background-color: #555;
-  z-index: 1;
+  background-color: #18a2ff;
 }
 
 .extra-info-agme-master-vocabulary {
   height: 75px;
   width: 100%;
-  background-color: #333;
+  background-color: #4bb8ff;
   clear:both;
-  z-index: 1;
 }
 
 .extra-info-agme-enlighten {
@@ -277,7 +269,7 @@
 }
 
 .extra-info-agme-enlighten:hover {
-  background-color: #4FC3F7;
+  background-color: #008bbf;
   height: calc(75px * 4);
   margin-top: -75px;
 }
@@ -285,26 +277,24 @@
 .extra-info-agme-enlighten-radicals {
   height: 75px;
   width: 100%;
-  background-color: #777;
-  z-index: 1;
+  background-color: #00b1f5;
 }
 
 .extra-info-agme-enlighten-kanji {
   height: 75px;
   width: 100%;
-  background-color: #555;
-  z-index: 1;
+  background-color: #2dc3ff;
 }
 
 .extra-info-agme-enlighten-vocabulary {
   height: 75px;
   width: 100%;
-  background-color: #333;
+  background-color: #57d3ff;
   clear:both;
-  z-index: 1;
 }
 
 .extra-info-agme-burned {
+  position: relative;
   height: 75px;
   overflow: hidden;
   width: 100%;
@@ -326,7 +316,6 @@
   width: 100%;
   background-color: #777;
   clear:both;
-  z-index: 1;
 }
 
 .extra-info-agme-burned-kanji {
@@ -334,7 +323,6 @@
   width: 100%;
   background-color: #555;
   clear:both;
-  z-index: 1;
 }
 
 .extra-info-agme-burned-vocabulary {
@@ -342,7 +330,6 @@
   width: 100%;
   background-color: #333;
   clear:both;
-  z-index: 1;
 }
 
 .extra-info-agme-container h5 {
