@@ -195,8 +195,7 @@ $wanikanidata = array_reverse($wanikanidata);
     echo '</div>';
 
     echo '</div>';
-    //TODO Add hover over minor details
-
+    
 
     echo '<div class="extra-info-agme-container-top">';
     //Apprentice
@@ -217,7 +216,6 @@ $wanikanidata = array_reverse($wanikanidata);
 
     echo '</div>';
 
-    //TODO Add hover over minor details
 
     //Guru
     echo '<div class="extra-info-agme-guru">';
@@ -237,7 +235,6 @@ $wanikanidata = array_reverse($wanikanidata);
 
     echo '</div>';
 
-    //TODO Add hover over minor details
 
     //Master
     echo '<div class="extra-info-agme-master">';
@@ -257,8 +254,6 @@ $wanikanidata = array_reverse($wanikanidata);
 
     echo '</div>';
 
-    //TODO Add hover over minor details
-
     //Enlighten
     echo '<div class="extra-info-agme-enlighten">';
     echo '<h5>'. $requested_information_enlighten_total .'</h5>';
@@ -277,7 +272,6 @@ $wanikanidata = array_reverse($wanikanidata);
 
     echo '</div>';
 
-    //TODO Add hover over minor details
 
     //END CONTAINER TOP AGME
     echo '</div>';
